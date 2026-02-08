@@ -58,6 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         "News App",
 
                         style: TextStyle(
+                          color: Colors.black,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
@@ -73,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           shrinkWrap: true,
                           itemBuilder: (ctx, index) {
                             return Container(
-                              width: 400,
+                              width: 300,
                               height: 150,
                               margin: EdgeInsets.symmetric(horizontal: 10),
                               decoration: BoxDecoration(
@@ -98,7 +99,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: ListView.separated(
                           scrollDirection: Axis.horizontal,
                           shrinkWrap: true,
-                          itemCount: articles.length,
+                          itemCount: sortArticle.length,
                           itemBuilder: (context, index) {
                             return InkWell(
                               onTap: () {
@@ -147,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                     SliverToBoxAdapter(
                       child: ListView.builder(
-                        itemCount: articles.length,
+                        itemCount: sortArticle.length,
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),
                         itemBuilder: (ctx, index) {
