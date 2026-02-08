@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   selectedIndex = index;
                                   articles.clear();
                                   dioClient.getNews(sortArticle[index]).then((value) {
-                                 return setState(() {
+                                  setState(() {
                                     articles = value;
                                   });
                                 });
