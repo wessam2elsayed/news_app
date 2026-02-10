@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                     SliverToBoxAdapter(
                       child: ListView.builder(
-                        itemCount: sortArticle.length,
+                        itemCount: articles.length,
                         shrinkWrap: true,
                         physics: NeverScrollableScrollPhysics(),
                         itemBuilder: (ctx, index) {
