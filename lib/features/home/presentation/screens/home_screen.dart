@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/core/api/dio_client.dart';
+import 'package:news_app/features/home/data/models/article_model.dart';
 import 'package:news_app/features/home/presentation/screens/details_screen.dart';
-import 'package:news_app/models/dio.dart';
-import 'package:news_app/models/model.dart';
+// import 'package:news_app/models/dio.dart';
+// import 'package:news_app/models/model.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
